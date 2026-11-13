@@ -1,85 +1,394 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SelqivGames - Privacy Policy / Политика конфиденциальности</title>
+<title>SelqivGames - Privacy Policy</title>
 <style>
   body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6;
-         max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; color: #1c1c28; background: #fafaf7; }
-  h1 { font-size: 1.6rem; margin-top: 2rem; }
+         max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; color: #1c1c28; background: #fafaf7; }
+  h1 { font-size: 1.6rem; margin: 1.4rem 0 .4rem; }
   h2 { font-size: 1.1rem; margin-top: 1.6rem; }
   .meta { color: #55556a; }
-  hr { margin: 3rem 0; border: 0; border-top: 1px solid #cfcfd8; }
   a { color: #1a56c4; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  nav button { font: inherit; padding: 6px 12px; border: 1px solid #b9b9c8; border-radius: 999px;
+               background: #fff; color: #1c1c28; cursor: pointer; }
+  nav button[aria-pressed="true"] { background: #1a56c4; border-color: #1a56c4; color: #fff; }
+  section.pol + section.pol { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #cfcfd8; }
+  /* With JavaScript only the chosen language is shown; without it every language stays visible. */
+  .js section.pol { display: none; }
+  .js section.pol.active { display: block; }
+  .js section.pol + section.pol { margin-top: 0; padding-top: 0; border-top: 0; }
+  .js nav { display: flex; }
+  html:not(.js) nav { display: none; }
 </style>
 </head>
 <body>
 
+<nav aria-label="Language">
+  <button data-l="ru">Русский</button>
+  <button data-l="en">English</button>
+  <button data-l="uk">Українська</button>
+  <button data-l="pl">Polski</button>
+  <button data-l="es">Español</button>
+  <button data-l="de">Deutsch</button>
+  <button data-l="pt">Português</button>
+  <button data-l="fr">Français</button>
+  <button data-l="tr">Türkçe</button>
+</nav>
+
+<!-- ============ RU ============ -->
+<section class="pol" id="ru" lang="ru">
 <h1>Политика конфиденциальности игр SelqivGames</h1>
 <p class="meta">Разработчик: SelqivGames<br>
 Контакт: <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
-Дата вступления в силу: 13 ноября 2026 г.<br>
-<a href="#en">English version below</a></p>
+Дата вступления в силу: 13 ноября 2026 г.</p>
 
 <h2>1. К каким играм относится политика</h2>
-<p>Эта политика относится ко всем мобильным играм разработчика SelqivGames. На данный момент это:</p>
-<ul>
-  <li>Ladder</li>
-</ul>
-<p>Новые игры будут добавляться в этот список.</p>
+<p>Эта политика относится ко всем мобильным играм разработчика SelqivGames (далее «мы»). Сейчас это: Ladder. Новые игры будут добавляться в этот список.</p>
 
 <h2>2. Какие данные мы собираем</h2>
-<p>Игры SelqivGames в текущих версиях не собирают, не передают и не продают никакие персональные данные. В них нет регистрации, аккаунтов, чатов и онлайн-функций. Мы не запрашиваем доступ к вашим контактам, фото, местоположению или микрофону.</p>
+<p>Наши игры не собирают, не передают, не продают и никому не раскрывают персональные данные. В них нет аккаунтов, регистрации, чатов, аналитики, рекламы и других онлайн-функций. Мы не получаем ваше имя, адрес электронной почты, местоположение, контакты, фотографии, идентификаторы устройства или любую другую личную информацию.</p>
 
 <h2>3. Что хранится на вашем устройстве</h2>
-<p>Для работы игр на вашем устройстве локально сохраняются: ваш прогресс (например, этаж, бонусы, пройденные диалоги) и настройки (громкость, язык). Эти данные остаются только на вашем телефоне и никуда не отправляются. При удалении игры или при сбросе прогресса в настройках они удаляются.</p>
+<p>Для работы игры на вашем устройстве локально сохраняются: ваш прогресс (например, текущий этаж, бонусы, пройденные диалоги) и настройки (громкость, язык). Эти данные остаются только на вашем устройстве: мы их не видим, и они никуда не отправляются. Они удаляются при удалении игры или при выборе «Начать сначала» в настройках.</p>
 
-<h2>4. Реклама и покупки</h2>
-<p>В текущих версиях игр нет рекламы и встроенных покупок. Если они появятся в какой-либо игре, эта политика будет обновлена до выхода такой версии, и в ней будет указано, какие данные обрабатывают рекламные и платёжные сервисы.</p>
+<h2>4. Разрешения и сторонние сервисы</h2>
+<p>Игры не запрашивают специальных разрешений Android (нет доступа к интернету, микрофону, камере, местоположению, контактам или памяти). В них нет сторонних сервисов аналитики, рекламы или отслеживания. Две оговорки: (а) кнопка «Политика конфиденциальности» в настройках открывает эту страницу в браузере вашего устройства; хостинг страницы (GitHub Pages) может обрабатывать технические данные, например IP-адрес, согласно собственной политике GitHub; (б) Google Play обрабатывает данные об установках и отчёты о сбоях по собственной политике Google; нам в консоли Google Play доступна только обезличенная сводная статистика.</p>
 
-<h2>5. Дети</h2>
-<p>Игры не направлены на сбор данных о детях и не собирают данные ни о ком.</p>
+<h2>5. Реклама и покупки</h2>
+<p>В текущих версиях нет рекламы и встроенных покупок. Если они появятся в какой-либо игре, эта политика будет обновлена до выхода такой версии, и в ней будет описано, какие данные обрабатывают рекламные и платёжные сервисы (например, Google AdMob, Google Play Billing).</p>
 
-<h2>6. Изменения политики</h2>
+<h2>6. Дети</h2>
+<p>Наши игры не предназначены для детей младше 13 лет (или младше 16, если местный закон устанавливает более высокий возраст) и сознательно не собирают данные ни о ком, включая детей.</p>
+
+<h2>7. Ваши права</h2>
+<p>Поскольку мы не собираем и не храним никаких ваших персональных данных, у нас нет данных, которые можно было бы показать, исправить, выгрузить или удалить. Все данные игры находятся на вашем устройстве под вашим контролем. Если у вас есть вопросы или вы считаете, что мы храним данные о вас, напишите нам.</p>
+
+<h2>8. Изменения политики</h2>
 <p>Мы можем обновлять эту политику. Актуальная версия всегда доступна на этой странице, дата вступления в силу указана выше.</p>
 
-<h2>7. Связь с нами</h2>
+<h2>9. Связь с нами</h2>
 <p>По любым вопросам пишите на <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a>.</p>
+</section>
 
-<hr>
-
-<div id="en" lang="en">
+<!-- ============ EN ============ -->
+<section class="pol" id="en" lang="en">
 <h1>Privacy Policy for SelqivGames games</h1>
 <p class="meta">Developer: SelqivGames<br>
 Contact: <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
 Effective date: November 13, 2026</p>
 
-<h2>1. Which games this policy covers</h2>
-<p>This policy applies to all mobile games by the developer SelqivGames. Currently:</p>
-<ul>
-  <li>Ladder</li>
-</ul>
-<p>New games will be added to this list.</p>
+<h2>1. Scope</h2>
+<p>This policy applies to all mobile games by the developer SelqivGames (“we”). Currently: Ladder. New games will be added to this list.</p>
 
 <h2>2. What data we collect</h2>
-<p>In their current versions, SelqivGames games do not collect, transmit or sell any personal data. They have no sign-up, accounts, chat or online features. We do not request access to your contacts, photos, location or microphone.</p>
+<p>Our games do not collect, transmit, sell or share any personal data. They have no accounts, sign-up, chat, analytics, advertising or other online features. We do not receive your name, email address, location, contacts, photos, device identifiers or any other personal information.</p>
 
 <h2>3. What is stored on your device</h2>
-<p>To work properly, the games store locally on your device: your progress (for example, floor, bonuses, completed dialogues) and settings (volume, language). This data stays on your phone only and is never sent anywhere. It is deleted when you uninstall the game or reset your progress in the settings.</p>
+<p>To work properly, a game stores locally on your device: your progress (for example, the current floor, bonuses and completed dialogues) and settings (volume, language). This data stays on your device only: we cannot see it and it is never sent anywhere. It is deleted when you uninstall the game or choose “Start over” in the settings.</p>
 
-<h2>4. Ads and purchases</h2>
-<p>The current versions of the games have no ads and no in-app purchases. If they are added to any game, this policy will be updated before such a version is released, and it will describe what data the advertising and payment services process.</p>
+<h2>4. Permissions and third parties</h2>
+<p>The games do not request any special Android permissions (no access to the internet, microphone, camera, location, contacts or storage). They contain no third-party analytics, advertising or tracking services. Two notes: (a) the “Privacy policy” button in the settings opens this page in your device’s web browser; the page’s hosting provider (GitHub Pages) may process technical data such as your IP address under its own privacy statement; (b) Google Play processes data about installs and crash reports under Google’s own privacy policy; in Google Play Console we only see anonymized, aggregated statistics.</p>
 
-<h2>5. Children</h2>
-<p>The games are not designed to collect data about children and do not collect data about anyone.</p>
+<h2>5. Ads and purchases</h2>
+<p>The current versions contain no ads and no in-app purchases. If they are added to any game, this policy will be updated before such a version is released and will describe what data the advertising and payment services process (for example, Google AdMob, Google Play Billing).</p>
 
-<h2>6. Changes to this policy</h2>
+<h2>6. Children</h2>
+<p>Our games are not directed at children under 13 (or under 16 where local law sets a higher age) and do not knowingly collect data from anyone, including children.</p>
+
+<h2>7. Your rights</h2>
+<p>Because we do not collect or store any personal data about you, there is no personal data we could show, correct, export or delete. All game data is on your device and under your control. If you have questions or believe we hold data about you, contact us.</p>
+
+<h2>8. Changes to this policy</h2>
 <p>We may update this policy. The current version is always available on this page; the effective date is shown above.</p>
 
-<h2>7. Contact</h2>
+<h2>9. Contact</h2>
 <p>For any questions, write to <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a>.</p>
-</div>
+</section>
 
+<!-- ============ UK ============ -->
+<section class="pol" id="uk" lang="uk">
+<h1>Політика конфіденційності ігор SelqivGames</h1>
+<p class="meta">Розробник: SelqivGames<br>
+Контакт: <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
+Дата набрання чинності: 13 листопада 2026 р.</p>
+
+<h2>1. На які ігри поширюється політика</h2>
+<p>Ця політика поширюється на всі мобільні ігри розробника SelqivGames (далі «ми»). Наразі це: Ladder. Нові ігри додаватимуться до цього списку.</p>
+
+<h2>2. Які дані ми збираємо</h2>
+<p>Наші ігри не збирають, не передають, не продають і нікому не розкривають персональні дані. У них немає акаунтів, реєстрації, чатів, аналітики, реклами та інших онлайн-функцій. Ми не отримуємо ваше ім’я, адресу електронної пошти, місцезнаходження, контакти, фотографії, ідентифікатори пристрою чи будь-яку іншу особисту інформацію.</p>
+
+<h2>3. Що зберігається на вашому пристрої</h2>
+<p>Для роботи гри на вашому пристрої локально зберігаються: ваш прогрес (наприклад, поточний поверх, бонуси, пройдені діалоги) і налаштування (гучність, мова). Ці дані залишаються лише на вашому пристрої: ми їх не бачимо, і вони нікуди не надсилаються. Вони видаляються під час видалення гри або вибору «Почати спочатку» в налаштуваннях.</p>
+
+<h2>4. Дозволи та сторонні сервіси</h2>
+<p>Ігри не запитують спеціальних дозволів Android (немає доступу до інтернету, мікрофона, камери, місцезнаходження, контактів чи пам’яті). У них немає сторонніх сервісів аналітики, реклами чи відстеження. Два застереження: (а) кнопка «Політика конфіденційності» в налаштуваннях відкриває цю сторінку в браузері вашого пристрою; хостинг сторінки (GitHub Pages) може обробляти технічні дані, наприклад IP-адресу, згідно з власною політикою GitHub; (б) Google Play обробляє дані про встановлення та звіти про збої згідно з власною політикою Google; нам у консолі Google Play доступна лише знеособлена зведена статистика.</p>
+
+<h2>5. Реклама та покупки</h2>
+<p>У поточних версіях немає реклами та вбудованих покупок. Якщо вони з’являться в будь-якій грі, ця політика буде оновлена до виходу такої версії й описуватиме, які дані обробляють рекламні та платіжні сервіси (наприклад, Google AdMob, Google Play Billing).</p>
+
+<h2>6. Діти</h2>
+<p>Наші ігри не призначені для дітей віком до 13 років (або до 16, якщо місцевий закон установлює вищий вік) і свідомо не збирають дані ні про кого, зокрема про дітей.</p>
+
+<h2>7. Ваші права</h2>
+<p>Оскільки ми не збираємо й не зберігаємо жодних ваших персональних даних, у нас немає даних, які можна було б показати, виправити, вивантажити чи видалити. Усі дані гри перебувають на вашому пристрої під вашим контролем. Якщо у вас є запитання або ви вважаєте, що ми зберігаємо дані про вас, напишіть нам.</p>
+
+<h2>8. Зміни політики</h2>
+<p>Ми можемо оновлювати цю політику. Актуальна версія завжди доступна на цій сторінці, дата набрання чинності вказана вище.</p>
+
+<h2>9. Зв’язок із нами</h2>
+<p>З будь-яких питань пишіть на <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a>.</p>
+</section>
+
+<!-- ============ PL ============ -->
+<section class="pol" id="pl" lang="pl">
+<h1>Polityka prywatności gier SelqivGames</h1>
+<p class="meta">Deweloper: SelqivGames<br>
+Kontakt: <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
+Data wejścia w życie: 13 listopada 2026 r.</p>
+
+<h2>1. Zakres polityki</h2>
+<p>Niniejsza polityka dotyczy wszystkich gier mobilnych dewelopera SelqivGames (dalej „my”). Obecnie jest to: Ladder. Nowe gry będą dodawane do tej listy.</p>
+
+<h2>2. Jakie dane zbieramy</h2>
+<p>Nasze gry nie zbierają, nie przesyłają, nie sprzedają ani nikomu nie udostępniają danych osobowych. Nie ma w nich kont, rejestracji, czatu, analityki, reklam ani innych funkcji online. Nie otrzymujemy Twojego imienia, adresu e-mail, lokalizacji, kontaktów, zdjęć, identyfikatorów urządzenia ani żadnych innych informacji osobistych.</p>
+
+<h2>3. Co jest przechowywane na Twoim urządzeniu</h2>
+<p>Aby działać poprawnie, gra zapisuje lokalnie na Twoim urządzeniu: Twój postęp (np. bieżące piętro, bonusy, ukończone dialogi) oraz ustawienia (głośność, język). Dane te pozostają wyłącznie na Twoim urządzeniu: nie widzimy ich i nigdy nie są nigdzie wysyłane. Są usuwane po odinstalowaniu gry lub po wybraniu w ustawieniach opcji „Zacznij od nowa”.</p>
+
+<h2>4. Uprawnienia i usługi zewnętrzne</h2>
+<p>Gry nie wymagają żadnych specjalnych uprawnień Androida (brak dostępu do internetu, mikrofonu, aparatu, lokalizacji, kontaktów ani pamięci). Nie zawierają zewnętrznych usług analitycznych, reklamowych ani śledzących. Dwie uwagi: (a) przycisk „Polityka prywatności” w ustawieniach otwiera tę stronę w przeglądarce na Twoim urządzeniu; dostawca hostingu strony (GitHub Pages) może przetwarzać dane techniczne, np. adres IP, zgodnie z własną polityką GitHub; (b) Google Play przetwarza dane o instalacjach i raportach awarii zgodnie z własną polityką Google; w konsoli Google Play mamy dostęp tylko do zanonimizowanych statystyk zbiorczych.</p>
+
+<h2>5. Reklamy i zakupy</h2>
+<p>Obecne wersje nie zawierają reklam ani zakupów w aplikacji. Jeśli pojawią się w jakiejkolwiek grze, polityka zostanie zaktualizowana przed wydaniem takiej wersji i opisze, jakie dane przetwarzają usługi reklamowe i płatnicze (np. Google AdMob, Google Play Billing).</p>
+
+<h2>6. Dzieci</h2>
+<p>Nasze gry nie są skierowane do dzieci poniżej 13. roku życia (lub poniżej 16., jeśli lokalne prawo ustala wyższy wiek) i świadomie nie zbierają danych od nikogo, także od dzieci.</p>
+
+<h2>7. Twoje prawa</h2>
+<p>Ponieważ nie zbieramy ani nie przechowujemy żadnych Twoich danych osobowych, nie mamy danych, które moglibyśmy udostępnić, poprawić, wyeksportować ani usunąć. Wszystkie dane gry znajdują się na Twoim urządzeniu i pod Twoją kontrolą. Jeśli masz pytania lub uważasz, że przechowujemy dane o Tobie, napisz do nas.</p>
+
+<h2>8. Zmiany polityki</h2>
+<p>Możemy aktualizować tę politykę. Aktualna wersja jest zawsze dostępna na tej stronie, a data wejścia w życie jest podana powyżej.</p>
+
+<h2>9. Kontakt</h2>
+<p>W razie pytań napisz na <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a>.</p>
+</section>
+
+<!-- ============ ES ============ -->
+<section class="pol" id="es" lang="es">
+<h1>Política de privacidad de los juegos de SelqivGames</h1>
+<p class="meta">Desarrollador: SelqivGames<br>
+Contacto: <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
+Fecha de entrada en vigor: 13 de noviembre de 2026</p>
+
+<h2>1. Alcance</h2>
+<p>Esta política se aplica a todos los juegos móviles del desarrollador SelqivGames (en adelante, «nosotros»). Actualmente: Ladder. Los juegos nuevos se añadirán a esta lista.</p>
+
+<h2>2. Qué datos recopilamos</h2>
+<p>Nuestros juegos no recopilan, transmiten, venden ni comparten datos personales. No tienen cuentas, registro, chat, analítica, publicidad ni otras funciones en línea. No recibimos tu nombre, correo electrónico, ubicación, contactos, fotos, identificadores del dispositivo ni ninguna otra información personal.</p>
+
+<h2>3. Qué se guarda en tu dispositivo</h2>
+<p>Para funcionar correctamente, el juego guarda localmente en tu dispositivo: tu progreso (por ejemplo, el piso actual, los bonus y los diálogos completados) y los ajustes (volumen, idioma). Estos datos permanecen solo en tu dispositivo: no podemos verlos y nunca se envían a ningún sitio. Se eliminan al desinstalar el juego o al elegir «Empezar de nuevo» en los ajustes.</p>
+
+<h2>4. Permisos y terceros</h2>
+<p>Los juegos no solicitan permisos especiales de Android (sin acceso a internet, micrófono, cámara, ubicación, contactos ni almacenamiento). No incluyen servicios de terceros de analítica, publicidad ni seguimiento. Dos matices: (a) el botón «Política de privacidad» de los ajustes abre esta página en el navegador de tu dispositivo; el proveedor de alojamiento de la página (GitHub Pages) puede tratar datos técnicos, como la dirección IP, según su propia política; (b) Google Play trata los datos de instalaciones e informes de fallos según la política de Google; en la consola de Google Play solo vemos estadísticas agregadas y anonimizadas.</p>
+
+<h2>5. Publicidad y compras</h2>
+<p>Las versiones actuales no tienen publicidad ni compras dentro de la aplicación. Si se añaden a algún juego, esta política se actualizará antes de publicar esa versión y describirá qué datos tratan los servicios de publicidad y de pago (por ejemplo, Google AdMob, Google Play Billing).</p>
+
+<h2>6. Menores</h2>
+<p>Nuestros juegos no están dirigidos a menores de 13 años (o de 16 donde la ley local fije una edad superior) y no recopilan conscientemente datos de nadie, incluidos los menores.</p>
+
+<h2>7. Tus derechos</h2>
+<p>Como no recopilamos ni almacenamos datos personales tuyos, no hay datos que podamos mostrar, corregir, exportar ni eliminar. Todos los datos del juego están en tu dispositivo y bajo tu control. Si tienes preguntas o crees que conservamos datos sobre ti, escríbenos.</p>
+
+<h2>8. Cambios en esta política</h2>
+<p>Podemos actualizar esta política. La versión vigente siempre está disponible en esta página; la fecha de entrada en vigor figura arriba.</p>
+
+<h2>9. Contacto</h2>
+<p>Para cualquier duda, escribe a <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a>.</p>
+</section>
+
+<!-- ============ DE ============ -->
+<section class="pol" id="de" lang="de">
+<h1>Datenschutzerklärung für die Spiele von SelqivGames</h1>
+<p class="meta">Entwickler: SelqivGames<br>
+Kontakt: <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
+Gültig ab: 13. November 2026</p>
+
+<h2>1. Geltungsbereich</h2>
+<p>Diese Erklärung gilt für alle mobilen Spiele des Entwicklers SelqivGames (im Folgenden „wir“). Derzeit: Ladder. Neue Spiele werden dieser Liste hinzugefügt.</p>
+
+<h2>2. Welche Daten wir erheben</h2>
+<p>Unsere Spiele erheben, übertragen, verkaufen oder teilen keine personenbezogenen Daten. Es gibt keine Konten, Registrierung, Chats, Analysen, Werbung oder andere Online-Funktionen. Wir erhalten weder deinen Namen, deine E-Mail-Adresse, deinen Standort, deine Kontakte, Fotos, Gerätekennungen noch sonstige persönliche Informationen.</p>
+
+<h2>3. Was auf deinem Gerät gespeichert wird</h2>
+<p>Damit das Spiel funktioniert, speichert es lokal auf deinem Gerät: deinen Fortschritt (z. B. aktuelle Etage, Boni, abgeschlossene Dialoge) und Einstellungen (Lautstärke, Sprache). Diese Daten bleiben ausschließlich auf deinem Gerät: Wir können sie nicht sehen, und sie werden nirgendwohin gesendet. Sie werden gelöscht, wenn du das Spiel deinstallierst oder in den Einstellungen „Neu starten“ wählst.</p>
+
+<h2>4. Berechtigungen und Drittanbieter</h2>
+<p>Die Spiele fordern keine besonderen Android-Berechtigungen an (kein Zugriff auf Internet, Mikrofon, Kamera, Standort, Kontakte oder Speicher). Sie enthalten keine Analyse-, Werbe- oder Tracking-Dienste von Drittanbietern. Zwei Hinweise: (a) Die Schaltfläche „Datenschutzerklärung“ in den Einstellungen öffnet diese Seite im Browser deines Geräts; der Hosting-Anbieter der Seite (GitHub Pages) kann technische Daten wie die IP-Adresse gemäß seiner eigenen Datenschutzerklärung verarbeiten; (b) Google Play verarbeitet Daten zu Installationen und Absturzberichten gemäß der Datenschutzerklärung von Google; in der Google Play Console sehen wir nur anonymisierte, aggregierte Statistiken.</p>
+
+<h2>5. Werbung und Käufe</h2>
+<p>Die aktuellen Versionen enthalten weder Werbung noch In-App-Käufe. Sollten sie in einem Spiel hinzukommen, wird diese Erklärung vor Veröffentlichung dieser Version aktualisiert und beschreiben, welche Daten die Werbe- und Zahlungsdienste verarbeiten (z. B. Google AdMob, Google Play Billing).</p>
+
+<h2>6. Kinder</h2>
+<p>Unsere Spiele richten sich nicht an Kinder unter 13 Jahren (oder unter 16, wo das lokale Recht ein höheres Alter vorsieht) und erheben wissentlich keine Daten von irgendjemandem, auch nicht von Kindern.</p>
+
+<h2>7. Deine Rechte</h2>
+<p>Da wir keine personenbezogenen Daten von dir erheben oder speichern, gibt es keine Daten, die wir herausgeben, berichtigen, exportieren oder löschen könnten. Alle Spieldaten befinden sich auf deinem Gerät und unter deiner Kontrolle. Wenn du Fragen hast oder glaubst, dass wir Daten über dich speichern, schreib uns.</p>
+
+<h2>8. Änderungen dieser Erklärung</h2>
+<p>Wir können diese Erklärung aktualisieren. Die aktuelle Fassung ist immer auf dieser Seite verfügbar; das Datum des Inkrafttretens steht oben.</p>
+
+<h2>9. Kontakt</h2>
+<p>Bei Fragen schreib an <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a>.</p>
+</section>
+
+<!-- ============ PT ============ -->
+<section class="pol" id="pt" lang="pt-BR">
+<h1>Política de privacidade dos jogos da SelqivGames</h1>
+<p class="meta">Desenvolvedor: SelqivGames<br>
+Contato: <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
+Data de vigência: 13 de novembro de 2026</p>
+
+<h2>1. Abrangência</h2>
+<p>Esta política se aplica a todos os jogos para celular do desenvolvedor SelqivGames (doravante «nós»). Atualmente: Ladder. Novos jogos serão adicionados a esta lista.</p>
+
+<h2>2. Quais dados coletamos</h2>
+<p>Nossos jogos não coletam, transmitem, vendem nem compartilham dados pessoais. Não há contas, cadastro, chat, análises, anúncios ou outros recursos online. Não recebemos seu nome, e-mail, localização, contatos, fotos, identificadores do dispositivo nem qualquer outra informação pessoal.</p>
+
+<h2>3. O que fica armazenado no seu dispositivo</h2>
+<p>Para funcionar corretamente, o jogo salva localmente no seu dispositivo: seu progresso (por exemplo, andar atual, bônus e diálogos concluídos) e as configurações (volume, idioma). Esses dados ficam somente no seu dispositivo: não podemos vê-los e eles nunca são enviados a lugar nenhum. São apagados quando você desinstala o jogo ou escolhe «Recomeçar» nas configurações.</p>
+
+<h2>4. Permissões e terceiros</h2>
+<p>Os jogos não solicitam permissões especiais do Android (sem acesso à internet, microfone, câmera, localização, contatos ou armazenamento). Não incluem serviços de terceiros de análise, publicidade ou rastreamento. Duas ressalvas: (a) o botão «Política de privacidade» nas configurações abre esta página no navegador do seu dispositivo; o provedor de hospedagem da página (GitHub Pages) pode tratar dados técnicos, como o endereço IP, conforme a política do próprio GitHub; (b) o Google Play trata dados de instalações e relatórios de falhas conforme a política do Google; no console do Google Play vemos apenas estatísticas agregadas e anonimizadas.</p>
+
+<h2>5. Anúncios e compras</h2>
+<p>As versões atuais não têm anúncios nem compras no aplicativo. Se forem adicionados a algum jogo, esta política será atualizada antes do lançamento dessa versão e descreverá quais dados os serviços de publicidade e pagamento tratam (por exemplo, Google AdMob, Google Play Billing).</p>
+
+<h2>6. Crianças</h2>
+<p>Nossos jogos não são direcionados a crianças menores de 13 anos (ou menores de 16 onde a lei local exigir idade maior) e não coletam conscientemente dados de ninguém, incluindo crianças.</p>
+
+<h2>7. Seus direitos</h2>
+<p>Como não coletamos nem armazenamos dados pessoais seus, não há dados que possamos mostrar, corrigir, exportar ou excluir. Todos os dados do jogo estão no seu dispositivo e sob seu controle. Se tiver dúvidas ou achar que guardamos dados sobre você, escreva para nós.</p>
+
+<h2>8. Alterações nesta política</h2>
+<p>Podemos atualizar esta política. A versão atual está sempre disponível nesta página; a data de vigência está indicada acima.</p>
+
+<h2>9. Contato</h2>
+<p>Em caso de dúvidas, escreva para <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a>.</p>
+</section>
+
+<!-- ============ FR ============ -->
+<section class="pol" id="fr" lang="fr">
+<h1>Politique de confidentialité des jeux SelqivGames</h1>
+<p class="meta">Développeur : SelqivGames<br>
+Contact : <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
+Date d’entrée en vigueur : 13 novembre 2026</p>
+
+<h2>1. Champ d’application</h2>
+<p>La présente politique s’applique à tous les jeux mobiles du développeur SelqivGames (ci-après « nous »). Actuellement : Ladder. Les nouveaux jeux seront ajoutés à cette liste.</p>
+
+<h2>2. Données que nous collectons</h2>
+<p>Nos jeux ne collectent, ne transmettent, ne vendent et ne partagent aucune donnée personnelle. Ils n’ont ni compte, ni inscription, ni chat, ni analyse, ni publicité, ni autre fonction en ligne. Nous ne recevons ni votre nom, ni votre adresse e-mail, ni votre position, ni vos contacts, photos, identifiants d’appareil ou toute autre information personnelle.</p>
+
+<h2>3. Ce qui est stocké sur votre appareil</h2>
+<p>Pour fonctionner, le jeu enregistre localement sur votre appareil : votre progression (par exemple l’étage actuel, les bonus et les dialogues terminés) et vos réglages (volume, langue). Ces données restent uniquement sur votre appareil : nous ne pouvons pas les voir et elles ne sont jamais envoyées ailleurs. Elles sont supprimées lorsque vous désinstallez le jeu ou choisissez « Recommencer » dans les réglages.</p>
+
+<h2>4. Autorisations et tiers</h2>
+<p>Les jeux ne demandent aucune autorisation Android particulière (pas d’accès à Internet, au micro, à l’appareil photo, à la position, aux contacts ni au stockage). Ils n’intègrent aucun service tiers d’analyse, de publicité ou de suivi. Deux précisions : (a) le bouton « Politique de confidentialité » des réglages ouvre cette page dans le navigateur de votre appareil ; l’hébergeur de la page (GitHub Pages) peut traiter des données techniques, comme l’adresse IP, selon sa propre politique ; (b) Google Play traite les données d’installation et les rapports de plantage selon la politique de Google ; dans la console Google Play, nous ne voyons que des statistiques agrégées et anonymisées.</p>
+
+<h2>5. Publicité et achats</h2>
+<p>Les versions actuelles ne contiennent ni publicité ni achats intégrés. S’ils sont ajoutés à un jeu, cette politique sera mise à jour avant la sortie de cette version et décrira les données traitées par les services publicitaires et de paiement (par exemple Google AdMob, Google Play Billing).</p>
+
+<h2>6. Enfants</h2>
+<p>Nos jeux ne s’adressent pas aux enfants de moins de 13 ans (ou de moins de 16 ans lorsque la loi locale fixe un âge plus élevé) et ne collectent sciemment de données sur personne, y compris les enfants.</p>
+
+<h2>7. Vos droits</h2>
+<p>Comme nous ne collectons ni ne stockons de données personnelles vous concernant, nous n’avons aucune donnée à communiquer, rectifier, exporter ou supprimer. Toutes les données du jeu se trouvent sur votre appareil et sous votre contrôle. Si vous avez des questions ou pensez que nous détenons des données vous concernant, écrivez-nous.</p>
+
+<h2>8. Modifications de cette politique</h2>
+<p>Nous pouvons mettre à jour cette politique. La version en vigueur est toujours disponible sur cette page ; la date d’entrée en vigueur figure ci-dessus.</p>
+
+<h2>9. Contact</h2>
+<p>Pour toute question, écrivez à <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a>.</p>
+</section>
+
+<!-- ============ TR ============ -->
+<section class="pol" id="tr" lang="tr">
+<h1>SelqivGames oyunları Gizlilik Politikası</h1>
+<p class="meta">Geliştirici: SelqivGames<br>
+İletişim: <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a><br>
+Yürürlük tarihi: 13 Kasım 2026</p>
+
+<h2>1. Kapsam</h2>
+<p>Bu politika, geliştirici SelqivGames’in tüm mobil oyunları için geçerlidir (bundan sonra «biz»). Şu anda: Ladder. Yeni oyunlar bu listeye eklenecektir.</p>
+
+<h2>2. Hangi verileri topluyoruz</h2>
+<p>Oyunlarımız kişisel verileri toplamaz, iletmez, satmaz ve paylaşmaz. Hesap, kayıt, sohbet, analiz, reklam veya başka çevrimiçi özellik yoktur. Adınızı, e-posta adresinizi, konumunuzu, kişilerinizi, fotoğraflarınızı, cihaz kimliklerinizi veya başka hiçbir kişisel bilgiyi almayız.</p>
+
+<h2>3. Cihazınızda neler saklanır</h2>
+<p>Oyun düzgün çalışmak için cihazınızda yerel olarak şunları kaydeder: ilerlemeniz (örneğin mevcut kat, bonuslar, tamamlanan diyaloglar) ve ayarlar (ses, dil). Bu veriler yalnızca cihazınızda kalır: bunları göremeyiz ve hiçbir yere gönderilmez. Oyunu sildiğinizde veya ayarlarda «Baştan başla» seçeneğini kullandığınızda silinirler.</p>
+
+<h2>4. İzinler ve üçüncü taraflar</h2>
+<p>Oyunlar özel Android izinleri istemez (internet, mikrofon, kamera, konum, kişiler veya depolama erişimi yok). Üçüncü taraf analiz, reklam veya izleme hizmeti içermezler. İki not: (a) ayarlardaki «Gizlilik politikası» düğmesi bu sayfayı cihazınızın tarayıcısında açar; sayfanın barındırma sağlayıcısı (GitHub Pages), IP adresi gibi teknik verileri kendi politikasına göre işleyebilir; (b) Google Play, yükleme verilerini ve çökme raporlarını Google’ın kendi politikasına göre işler; Google Play Console’da yalnızca anonimleştirilmiş toplu istatistikleri görürüz.</p>
+
+<h2>5. Reklamlar ve satın alımlar</h2>
+<p>Mevcut sürümlerde reklam ve uygulama içi satın alma yoktur. Herhangi bir oyuna eklenirlerse, bu politika o sürüm yayınlanmadan önce güncellenecek ve reklam ile ödeme hizmetlerinin hangi verileri işlediğini açıklayacaktır (örneğin Google AdMob, Google Play Billing).</p>
+
+<h2>6. Çocuklar</h2>
+<p>Oyunlarımız 13 yaşın altındaki (veya yerel yasanın daha yüksek yaş belirlediği yerlerde 16 yaşın altındaki) çocuklara yönelik değildir ve çocuklar dahil hiç kimseden bilerek veri toplamaz.</p>
+
+<h2>7. Haklarınız</h2>
+<p>Sizinle ilgili kişisel veri toplamadığımız ve saklamadığımız için gösterebileceğimiz, düzeltebileceğimiz, dışa aktarabileceğimiz veya silebileceğimiz bir veri yoktur. Oyunun tüm verileri cihazınızdadır ve sizin kontrolünüzdedir. Sorularınız varsa veya hakkınızda veri tuttuğumuzu düşünüyorsanız bize yazın.</p>
+
+<h2>8. Politikadaki değişiklikler</h2>
+<p>Bu politikayı güncelleyebiliriz. Güncel sürüm her zaman bu sayfada bulunur; yürürlük tarihi yukarıda belirtilmiştir.</p>
+
+<h2>9. İletişim</h2>
+<p>Sorularınız için <a href="mailto:selqivgames@gmail.com">selqivgames@gmail.com</a> adresine yazın.</p>
+</section>
+
+<script>
+(function () {
+  var langs = ["ru", "en", "uk", "pl", "es", "de", "pt", "fr", "tr"];
+  var root = document.documentElement;
+  root.classList.add("js");
+  var buttons = document.querySelectorAll("nav button");
+  var sections = document.querySelectorAll("section.pol");
+
+  function show(code) {
+    if (langs.indexOf(code) < 0) { code = "en"; }
+    sections.forEach(function (s) { s.classList.toggle("active", s.id === code); });
+    buttons.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-l") === code ? "true" : "false"); });
+    root.lang = code === "pt" ? "pt-BR" : code;
+  }
+
+  function detect() {
+    var h = (location.hash || "").replace("#", "");
+    if (langs.indexOf(h) >= 0) { return h; }
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < list.length; i++) {
+      var c = String(list[i]).toLowerCase().split("-")[0];
+      if (langs.indexOf(c) >= 0) { return c; }
+    }
+    return "en";
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var c = b.getAttribute("data-l");
+      show(c);
+      try { history.replaceState(null, "", "#" + c); } catch (e) {}
+    });
+  });
+  window.addEventListener("hashchange", function () { show(detect()); });
+  show(detect());
+})();
+</script>
 </body>
 </html>
